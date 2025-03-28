@@ -1,0 +1,34 @@
+
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #0">
+  <div class="text-center">
+    <h1>Welcome to Y!</h1>
+    <h5>The greatest Twitter clone of all time in the making</h5>  
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+        <div class="container-fluid">
+
+            <div class = "d-flex justify-content-center">  <!-- arreglar para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <%= link_to "About", "/static_pages/about", class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Contact", "/static_pages/contact", class: "nav-link" %>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+</div>
+
+
+

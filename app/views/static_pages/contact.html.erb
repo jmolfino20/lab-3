@@ -1,0 +1,82 @@
+<div class="d-flex" style="min-height: 10vh; background-color: #0;">
+  <div class="text-center">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+  <div class="container-fluid">
+
+      <div class = "d-flex justify-content-center"> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+              <%= link_to "Home", "/static_pages/home", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+              <%= link_to "About", "/static_pages/about", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+              <%= link_to "Contact", "/static_pages/contact", class: "nav-link" %>
+          </li>
+
+          </ul>
+      </div>
+  </div>
+</nav>
+    </div>
+</div>
+
+
+<div class="container-fluid mt-3 ps-5 pb-3 pe-5">
+
+    <div class="d-flex justify-content-start ps-2 ">
+        <h2 class = "text-decoration-underline">Contact Us</h2>
+    </div>
+    
+    <div class="row"> 
+
+        <div class="col-md-4">
+            <div class="d-flex container justify-content-center ps-2 pb-3">
+                
+            </div>
+            <p class = "" style="word-break: break-word;">
+                If you're interested in this project, or want to comment any aspect of it, feel completely free to 
+                leave your information or message here. I'll be happy to hear from you.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid mt-3 ps-5 pb-3 pe-5">
+    <%= form_with(url: contact_path, method: :post, local: true, html: {novalidate: true}) do |form| %>
+    <div>
+        <%= form.label :name, "Name" %>
+        <%= form.text_field :name, class: "form-control"%>
+    </div>
+
+    <div >
+        <%= form.label :email, "Email" %>
+        <%= form.text_field :email, class: "form-control"%>
+    </div>
+
+    <div>
+        <%= form.label :message, "Message" %>
+        <%= form.text_area :message, class: "form-control"%>
+    </div>
+
+    <div class = "d-flex justify-content-center pb-5 pt-5">
+        <%= form.submit "Submit", class: "btn btn-success" %>
+    </div>
+    <% end %>
+
+    <% if flash[:notice] %>
+    <div class="alert alert-success mt-3">
+        <%= flash[:notice] %>
+    </div>
+    <% end %>
+</div>

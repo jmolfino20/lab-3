@@ -1,0 +1,146 @@
+<div class="d-flex" style="min-height: 10vh; background-color: #0;">
+    <div class="text-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+        <div class="container-fluid">
+
+            <div class = "d-flex justify-content-center">  <!-- arreglar para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <%= link_to "Home", "/static_pages/home", class: "nav-link" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to "About", "/static_pages/about", class: "nav-link" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to "Contact", "/static_pages/contact", class: "nav-link" %>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>
+</div>
+
+
+
+<div class="container-fluid mt-3 ps-5 pb-3 pe-5">
+
+    <div class="d-flex justify-content-start ps-2 pb-3">
+        <h2 class = "text-decoration-underline">About Y</h2>
+    </div>
+    
+    <div class="row"> 
+
+        <div class="col-md-4">
+            <div class="d-flex container justify-content-center ps-2 pb-3">
+                <h5 class = "fst-italic text-center">Idea &#x1F4A1</h5>
+            </div>
+            <p class = "text-center" style="word-break: break-word;">
+            The idea of this project is to prepare a
+            website and its basic structure to then upgrade it and present a Twitter-like web app.
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="d-flex justify-content-center ps-2 pb-3">
+                <h5 class = "fst-italic text-center">Responsiveness &#128242</h5>
+            </div>
+            <p class = "text-center" style="word-break: break-word;">
+            An important aspect of this web-app, is that it can be visualized in any device. Go ahead and visit our page from 
+            a different device such as your phone or tablet.    
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <div class="d-flex justify-content-center ps-2 pb-3">
+                <h5 class = "fst-italic text-center">Future &#128284</h5>
+            </div>
+            <p class = "text-center" style="word-break: break-word;"> 
+            This basic web app will hopefully turn into an amazing project, which
+            is going to be super useful to learn and master the basics of Ruby on Rails. It is already being beneficial and fun.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid mt-3 ps-5 pb-3">
+
+    <div class="d-flex justify-content-start ps-2 pb-3 ">
+        <h2 class = "text-decoration-underline">About Me</h2>
+    </div>
+    <div class="row"> 
+
+        <div class="col-md-5">
+            <%= image_tag "imagen.jpeg", alt: "Foto de perfil", class: "img-fluid w-75 rounded" %>
+        </div>
+
+        <div class="d-flex flex-column col-md-6">
+            <h3>Joaquín Molfino Tapia</h3>
+
+            <p>I'm a 4th year student of Computer Science Engineering at Universidad de Los Andes in Chile. I'm also taking classes of electrical engineering, which have been really challenging.
+            I always have been interested in how things work, which is what inspired me to study this career.</p>
+            
+            <p>Besides that, I'm a firefighter at the 20th Fire Station of the Santiago FD since 2022. I knew I wanted to be a firefighter since I was 13 years old.</p>
+            
+           <div class="d-flex justify-content-center mt-4">
+                <h5 class = "text-decoration-underline">Skills</h5>
+            </div>
+
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col" class = "text-center">Skill</th>
+                        <th scope="col" class = "text-center">Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td class = "text-center">Python</td>
+                        <td class = "text-center">Advanced</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "text-center">Excel</td>
+                        <td class = "text-center">Advanced</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "text-center">Javascript</td>
+                        <td class = "text-center">Medium</td>
+                    </tr>
+
+                                       
+                    <tr>
+                        <td class = "text-center">C++</td>
+                        <td class = "text-center">Medium</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "text-center">English</td>
+                        <td class = "text-center">Advanced</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "text-center">Spanish</td>
+                        <td class = "text-center">Native</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
